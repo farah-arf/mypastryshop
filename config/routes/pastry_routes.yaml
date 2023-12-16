@@ -1,0 +1,11 @@
+# pastry_routes.yaml
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+about:
+    path: /about
+    controller: App\Controller\AboutController::index
+
+# Define routes for other pages in a similar manner

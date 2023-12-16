@@ -1,0 +1,68 @@
+/* Add this to your existing css_pastry.css or create a new CSS file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: grid;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], button[type="button"] {
+    width: 600px; 
+    height: 40px; 
+    padding: 10px; 
+
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Additional styling for hover effect */
+input[type="submit"]:hover, button[type="button"]:hover {
+    background-color: darkorange;
+}
+
+input[type="submit"]:hover {
+    background-color: orangered;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: orangered;
+}

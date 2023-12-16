@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/pastry.css') }}">
+    <title>Pastry Shop</title>
+</head>
+<body>
+
+    <header>
+        <a href="{{ path('home') }}" class="logo"> <span>P</span>astry <span>S</span>hop</a>
+        <ul class="menu">
+            <li><a href="{{ path('home') }}">Home</a></li>
+            <li><a href="{{ path('about') }}">About</a></li>
+            <li><a href="#">Product</a>
+                <ul class="sousmenu">
+                    <li><a href="#cake">cakes</a></li>
+                    <li><a href="#dessert">Frozen desserts</a></li>
+                    <li><a href="#category">other categories</a></li>
+                </ul>
+            </li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="{{ path('contact') }}">Contact</a></li>
+            <a href="#" class="btn">Order</a>
+        </ul>
+        <a href="{{ path('connexion') }}">
+            <img src="https://th.bing.com/th/id/OIP.rW_5Gny8hwOfktw_bhdHegHaHa?pid=ImgDet&rs=1" alt="IcÃōne de profil" id="icone-profil">
+        </a>
+    </header>
+
+    <section id="pageaccueil">
+        <div class="pageacc">
+            <h2>The best way to start your day</h2>
+            <p>Welcome to our online pastry shop! Here, you will find a delectable selection of freshly baked pastries, cakes, and desserts that are made with only the finest ingredients.</p>
+            <a href="menu v2.html" class="btn2">Our menu</a>
+            <a href="menu v2.html" class="btn2">Order Now</a>
+        </div>
+    </section>
+
+    <section id="introduction">
+        <div class="intro">
+            <div class="aboutus">
+                <h2><span>A</span>bout us</h2>
+                <p>At our online pastry shop, we are dedicated to bringing you the most delicious and exquisite treats that will tantalize your taste buds. 
+                    Our team of skilled pastry chefs creates all of our treats using the freshest and highest quality ingredients, ensuring that every bite is a delightful experience. 
+                    We believe that pastry-making is an art, and we strive to create visually stunning treats that will make your mouth water. 
+                    Whether you're looking for a sweet treat to enjoy with your morning coffee, or a decadent dessert for a special occasion, our online pastry shop has got you covered.
+                    Customer satisfaction is our top priority, and we are committed to providing exceptional customer service, from the moment you place your order to the time you receive your treats. 
+                    We take pride in our attention to detail and our commitment to using sustainable and eco-friendly packaging
+                    So, browse our selection of mouth-watering treats, and treat yourself or someone special today!</p>
+            </div>
+        </div>
+
+        <div class="aboutus">
+            <div class="image">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/8/6300438/6c9bc80b19b20630cefe3337734b2bde_featured_v2.jpg" alt="" width="400">
+            </div>
+        </div>
+    </section>
+
+    <section class="types">
+        <div id="cake">
+            <h2><span>O</span>ur cakes</h2>
+            <p>Each of our cakes tells a story !</p>
+        </div>
+
+        <div class="product">
+            <div class="imag">
+                <div class="im">
+                    <img src="https://i.pinimg.com/736x/78/6a/98/786a98a1ce4c670495d60f2de624b768.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Chocolate cake</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://i.pinimg.com/736x/ad/ee/9a/adee9a08ba49a7b0b62549bcde3b0e05--strawberry-cakes-strawberry-cake-decorations.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Strawberry cake</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://www.kilometre-0.fr/wp-content/uploads/2019/12/20191222Cuisine_mart200.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Orange cake</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types">
+        <div id="dessert">
+            <h2><span>F</span>rozen <span>D</span>esserts</h2>
+            <p>Try It Once, and Forget the Rest !</p>
+        </div>
+
+        <div class="product">
+            <div class="imag">
+                <div class="im">
+                    <img src="https://cdn.tasteatlas.com//images/dishes/723964d6c2f44e9ba35d0cdcb5480438.jpg?w=905&h=510" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Tartufo</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://cdn.tasteatlas.com//Images/Dishes/3c8f9cf5917b43cda4b8b200f6391aa1.jpg?w=905&h=510" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Spumoni</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://cdn.tasteatlas.com//images/dishes/4f3d4d079fce4c2ebda620d8717ae358.jpg?w=905&h=510" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Kulfi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="types">
+        <div id="category">
+            <h2><span>O</span>ther categories</h2>
+            <p>One bite and you'll be hooked !</p>
+        </div>
+
+        <div class="product">
+            <div class="imag">
+                <div class="im">
+                    <img src="https://eastcoastbakehouse.com/wp-content/uploads/2016/09/14719736_524500451076234_6152375583041912832_n.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Cookies</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/OIP.SMAdp4JwR32ijtAqblH0cwHaE7?pid=ImgDet&rs=1" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Cupcakes</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/R.ea71801d7eeb130167612321867d2698?rik=6ZWN6owDe7RMlg&riu=http%3a%2f%2fhdwpro.com%2fwp-content%2fuploads%2f2018%2f02%2fSuper-Doughnut.jpg&ehk=cOoyL4im9TALb7LAxljfqc05GA5JGCGZVTACos4mxOo%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Donuts</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/R.668a6aa39078f1a5c1f5298f30b12e72?rik=lsRh%2bNSt4QiPWQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-3%2fDark-Chocolate-Wallpaper-HD-12605.jpg&ehk=KXRqi2EsfO0d6VHbrx2hvS3OJJwxo8jirMIa1tkl8Aw%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Dark chocolate</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/OIP.nVl7ohsX0v6eC0jYwY3nfAHaHa?pid=ImgDet&rs=1" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Pancakes</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/OIP.ETDr51KxyQwV6Op8Jzk3owHaFj?pid=ImgDet&rs=1" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Sweets</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://i.pinimg.com/originals/e9/ea/d5/e9ead5a1abe4dc4405ddc31b689de581.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Waffles</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://static-communitytable.parade.com/wp-content/uploads/2015/05/creative-brownies-featured.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Brownies</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <section class="cheff">
+        <div class="chef">
+            <h2>Our <span>C</span>hefs</h2>
+            <p>We have the best chefs in the world</p>
+        </div>
+
+        <div class="product">
+            <div class="imag">
+                <div class="im">
+                    <img src="https://pastryartsmag.com/wp-content/uploads/2019/01/Bill-Yosses.jpg" alt="">
+                </div>
+                <div>
+                    <h3 class="text">William Yosses</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/R.3eb6f9b9d0f37bca6f3a09d2651ef2fb?rik=q7Je%2fq%2bVbEJmXA&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Elizabeth Falkner</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/R.9d0709a463ff955c4cd5398ded9e39bf?rik=ZQtCcRIqIMaq5A&riu=http%3a%2f%2fwww.cassidyandfishman.com%2fwp-content%2fuploads%2f2011%2f10%2fMesnier500.jpg&ehk=0ZI3EPN4KSuLQWQIB5341RBbjlkDHSxeJznEpjWl%2bY0%3d&risl=&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Roland Mesnier</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/R.71276776a8a33dd88725d17700539da1?rik=JIjNydN9jLFS3Q&pid=ImgRaw&r=0" alt="">
+                </div>
+                <div>
+                    <h3 class="text">Stephen Durfee</h3>
+                </div>
+            </div>
+        </div>
+     </section>    
+
+     <section class="reviews">
+        <div id="review">
+            <h2><span>R</span>eviews</h2>
+            <p>What our clients think</p>
+        </div>
+
+        <div class="product">
+            
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/OIP.zv50ixkzaSxWt25xOxGNzgHaLG?pid=ImgDet&w=683&h=1024&rs=1" alt="">
+                </div>
+                <div>
+                    <p>"I ordered a cake for my son's birthday, and it was a hit! The cake was moist, flavorful, and beautifully decorated. The online ordering process was easy, and the customer service was excellent. I will definitely be ordering from this pastry shop again."</p>
+                    <h3 class="text">John D.</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://th.bing.com/th/id/OIP.72LD-dPtCuFtgcN0TCoysgHaE7?pid=ImgDet&rs=1" alt="">
+                </div>
+                <div>
+                    <p>"I am blown away by the quality and taste of the pastries from this online pastry shop! Each bite was a heavenly experience, and the attention to detail in the presentation was impressive. I highly recommend this shop to anyone looking for top-notch treats."</p>
+                    <h3 class="text">Sarah H.</h3>
+                </div>
+            </div>
+
+            <div class="imag">
+                <div class="im">
+                    <img src="https://norsirk.no/wp-content/uploads/2019/06/NORSIRK-Mats-Bardal-.jpg" alt="">
+                </div>
+                <div>
+                    <p>"The attention to detail in every pastry is what sets this shop apart from the rest. You can tell that the pastry chefs are passionate about what they do, and it shows in the quality of their treats. I ordered a box of assorted pastries for a friend's bridal shower, and everyone raved about them. Thank you for making the event extra special!"</p>
+                    <h3 class="text">Alex S.</h3>
+                </div>
+            </div>
+        </div>
+     </section> 
+     
+
+    <section class="contactus">
+        <div id="contact">
+            <h2><span>C</span>ontact</h2>
+            <p>Don't hesitate to contact us !</p>
+        </div>
+        <div class="message">
+            <h3>Send a message</h3>
+            <form action="action.php" method="post">
+            <div class="input">
+                <input type="text" name="nom" placeholder="Nom" required>
+            </div>
+            <div class="input">
+                <input type="text" name="prenom" placeholder="Prenom" required>
+            </div>
+            <div class="input">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="input">
+                <textarea name="msg" placeholder="message" required></textarea>
+            </div>
+            <div class="input">
+                <button type="submit" name="valider" class="envoyerbtn">Envoyer</button>
+                <button type="reset" name="annuler" class="cancelbtn">Cancel</button>
+            </div>
+        
+        </form>
+        </div>
+
+        
+     </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+    <header>
+        <a href="#" class="logo"> <span>P</span>astry <span>S</span>hop</a>
+        <ul class="menu">
+            <li><a href="#pageaccueil">Home</a></li>
+            <li><a href="#introduction">About</a></li>
+            <li><a href="#">Product</a>
+            <ul class="sousmenu">
+                <li><a href="#cake">cakes</a></li>
+                <li><a href="#dessert">Frozen desserts</a></li>
+                <li><a href="#category">other categories</a></li>
+            </ul>
+            </li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <a href="#" class="btn">Order</a>
+        </ul>
+        <a href="connexion.html">
+            <img src="https://th.bing.com/th/id/OIP.rW_5Gny8hwOfktw_bhdHegHaHa?pid=ImgDet&rs=1" alt="IcÃīne de profil" id="icone-profil">
+        </a>

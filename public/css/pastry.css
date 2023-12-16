@@ -1,0 +1,461 @@
+*{
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    padding: 20px ;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logo{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+
+}
+.logo span{
+    color: beige;
+}
+
+.menu{
+    display: flex;
+    position: relative;
+    font-size: 1.5rem;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: red;
+}
+
+#icone-profil {
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    box-shadow: 0 0 10px rgba(15, 15, 15, 0.5);
+  }
+  
+
+.btn{
+    padding: 10px 20px;
+    background:orange;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background: beige;
+}
+
+header .menu li a:hover{
+    color:orange;
+    border-bottom: 2px solid orange;
+}
+
+.sousmenu{
+    display: none;
+    position: absolute;
+    
+    width: 200px;
+    margin-left: -5%;
+}
+header li:hover .sousmenu{
+    display: block;
+}
+
+.sousmenu li:hover a{
+    background-color: bisque;
+}
+
+
+#pageaccueil{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://fastly.4sqi.net/img/general/600x600/29121632_-68MLivQV4kNBijUFZi09Qzr5qzGxgxMdP5eTfgGMUk.jpg);
+    background-size: cover;
+}
+
+#pageaccueil .pageacc{
+    max-width: 70%;
+    text-align: center;
+}
+#pageaccueil .pageacc h2{
+    color: white;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.pageacc p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.btn1, .btn2{
+    font-size: 1em;
+    color: white;
+    background: orange;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.btn1:hover , .btn2:hover{
+    letter-spacing: 4px;
+    background-color: orangered;
+}
+
+.intro{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.intro .aboutus {
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.intro .aboutus h2{
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize;
+}
+h2 span{
+    color: orange;
+    font-size: 1.5em;
+}
+.intro .aboutus p{
+    font-size: 18px;
+}
+
+.image{
+    height: 200px;
+    width:600px;
+    float: right;
+    margin-right: 5px;
+    margin-top: -20%;
+}
+
+#cake{
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+
+}
+#dessert{
+    font-size: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+
+}
+
+#category{
+        font-size: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    
+    }
+    
+.chef{
+        font-size: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;   
+    
+    }
+
+
+.types .product{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.types .product .imag{
+    width: 350px;
+    margin-top: 20px;
+    border: 20px solid white;
+    box-shadow: 20px 15px 35px rgba(0,0,0,0.8);
+}
+
+.types .product .imag .im{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.types .product .imag .im img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.text{
+    text-align: center;
+}
+
+.cheff{
+    margin-top: 50px;
+}
+
+.cheff .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.cheff .product .imag{
+    width: 250px;
+    margin: 15px;
+}
+
+.cheff .product .imag img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.btnn{
+    font-size: 1em;
+    color: white;
+    background: orange;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-left: 600px;
+}
+.btnn:hover{
+    background-color: orangered;
+}
+
+.reviews{
+    margin-top: 50px;
+    background-image: url(https://th.bing.com/th/id/OIP.NmNKLVkVA07JRzwMT3jMuQHaEo?pid=ImgDet&rs=1);
+    background-size: cover;
+}
+
+#review{
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#contact{
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.reviews .product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.reviews .product .imag{
+    width: 250px;
+    margin: 15px;
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.reviews .product .imag .im{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    left: 30%;
+    
+}
+
+.reviews .product .imag img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    
+}
+
+.reviews .product .imag p{
+    text-align: center;
+    font-style: oblique;
+}
+
+.reviews .product .imag .text{
+    color: orange;
+    margin-top: 20px;
+}
+
+.contactus{
+    margin-top: 50px;
+    background-image: url(https://image.freepik.com/foto-gratis/composicion-chocolate-copyspace_23-2147985665.jpg);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+.message{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 5px 15px 50px rgba(0,0,0,0.8);
+    max-width: 400px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    
+}
+
+.message h3{
+    margin-bottom: 20px;
+}
+
+.message .input input, .message .input textarea {
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.message .input{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.envoyerbtn {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    background: orange;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    padding: 14px 20px;
+    width: 49%;
+    
+}
+.envoyerbtn:hover{
+    background-color: orangered;
+    letter-spacing: 4px;
+}
+.cancelbtn {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+    background: red;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: none;
+    padding: 14px 20px;
+    width: 49%;
+    
+}
+.cancelbtn:hover{
+    background-color: rgb(133, 14, 14);
+    letter-spacing: 4px;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+    color: #000;
+
+}
+
+header.sticky .navbar li a{
+    color: #000;
+
+}
+
+header.sticky li a:hover{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.order-btn {
+    font-size: 1em;
+    color: white;
+    background: orange;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    cursor: pointer; 
+}
+
+.order-btn:hover {
+    letter-spacing: 4px;
+    background-color: orangered;
+}

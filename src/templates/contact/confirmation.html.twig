@@ -1,0 +1,116 @@
+{# confirmation.html.twig #}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ asset('form.css') }}">
+    <title>Order Confirmation</title>
+</head>
+
+<body>
+    <section>
+        <h2>Order Confirmation</h2>
+
+        {{ form_start(orderForm) }}
+        {{ form_widget(orderForm.cart_items, {'attr': {'class': 'hidden'}}) }}
+
+        <div>
+            {{ form_label(orderForm.customer_name) }}
+            {{ form_widget(orderForm.customer_name, {'attr': {'required': 'required'}}) }}
+        </div>
+
+        <div>
+            {{ form_label(orderForm.customer_email) }}
+            {{ form_widget(orderForm.customer_email, {'attr': {'required': 'required'}}) }}
+        </div>
+
+        <div>
+            {{ form_label(orderForm.customer_address) }}
+            {{ form_widget(orderForm.customer_address, {'attr': {'required': 'required'}}) }}
+        </div>
+
+        <div>
+            {{ form_widget(orderForm.submit, {'attr': {'class': 'button-common'}}) }}
+            <button type="button" class="button-common" id="cancelOrder">Cancel Order</button>
+        </div>
+        {{ form_end(orderForm) }}
+    </section>
+
+    <section>
+        <div>
+            <a href="{{ path('home') }}" class="btn1">Back to Home page</a>
+        </div>
+    </section>
+
+    <div id="orderInfo"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch the cart items from localStorage
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Set the value of the hidden input field
+            const cartItemsInput = document.getElementById('order_cart_items');
+            cartItemsInput.value = JSON.stringify(cartItems);
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalBudget = urlParams.get('total');
+            const products = JSON.parse(decodeURIComponent(urlParams.get('products')));
+
+            const orderInfoContainer = document.getElementById('orderInfo');
+
+            if (totalBudget && products) {
+                orderInfoContainer.innerHTML = `<p>Total Budget: $${totalBudget}</p>`;
+                orderInfoContainer.innerHTML += "<p>Selected Products:</p><ul>";
+                products.forEach(product => {
+                    orderInfoContainer.innerHTML += `<li>${product.name} - $${product.price}</li>`;
+                });
+                orderInfoContainer.innerHTML += "</ul>";
+            } else {
+                orderInfoContainer.innerHTML = "<p>No order information available.</p>";
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalBudget = urlParams.get('total');
+            const products = JSON.parse(decodeURIComponent(urlParams.get('products')));
+
+            const orderInfoContainer = document.getElementById('orderInfo');
+
+            if (totalBudget && products) {
+                orderInfoContainer.innerHTML = `<p>Total Budget: $${totalBudget}</p>`;
+                orderInfoContainer.innerHTML += "<p>Selected Products:</p><ul>";
+                products.forEach(product => {
+                    orderInfoContainer.innerHTML += `<li>${product.name} - $${product.price}</li>`;
+                });
+                orderInfoContainer.innerHTML += "</ul>";
+            } else {
+                orderInfoContainer.innerHTML = "<p>No order information available.</p>";
+            }
+
+            // Cancel Order button logic
+            const cancelOrderButton = document.getElementById('cancelOrder');
+            cancelOrderButton.addEventListener('click', function () {
+                // Clear the order information
+                orderInfoContainer.innerHTML = "<p>No order information available.</p>";
+
+                // You can also reset the form fields if needed
+                const form = document.querySelector('form');
+                form.reset();
+
+                // Optionally, you can redirect the user to the home page or perform other actions
+                // window.location.href = "{{ path('home') }}";
+            });
+        });
+    </script>
+</body>
+
+</html>
